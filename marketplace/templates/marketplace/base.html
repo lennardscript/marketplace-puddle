@@ -12,10 +12,10 @@
     <a href="#" class="text-xl font-semibold">Puddle</a>
 
     <div class="space-x-6">
-      <a href="#" class="text-lg font-semibold hover:text-gray-500">Nuevo Item</a>
+      <a href="#" class="text-lg font-semibold hover:text-gray-500">Nuevos productos</a>
       <a href="#" class="text-lg font-semibold hover:text-gray-500">Navegar</a>
 
-      <a href="#" class="px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Iniciar sesión</a>
+      <a href="{% url 'marketplace:signup' %}" class="px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Registrarse</a>
       <a href="#" class="px-6 py-3 text-lg font-semibold bg-gray-500 text-white rounded-xl hover:bg-gray-700">Cerrar sesión</a>
     </div>
   </nav>
@@ -35,7 +35,7 @@
 
           <ul class="space-y-2">
             <li><a href="" class="text-lg text-teal-500 hover:text-teal-700">Sobre mi</a></li>
-            <li><a href="{% url 'contact' %}" class="text-lg text-teal-500 hover:text-teal-700">Contacto</a></li>
+            <li><a href="{% url 'marketplace:contact' %}" class="text-lg text-teal-500 hover:text-teal-700">Contacto</a></li>
             <li><a href="" class="text-lg text-teal-500 hover:text-teal-700">Políticas de privacidad</a></li>
             <li><a href="" class="text-lg text-teal-500 hover:text-teal-700">Terminos y condiciones</a></li>
           </ul>
